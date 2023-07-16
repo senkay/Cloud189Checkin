@@ -246,7 +246,7 @@ async function main() {
         await doLogin(userName, password);
         const result = await doTask();
         result.forEach((r) => logger.log(r));
-        logger.log('任务执行完毕');
+        logger.log('任务执行完毕!');
       } catch (e) {
         if (e.code === 'ECONNRESET') {
           throw e;
